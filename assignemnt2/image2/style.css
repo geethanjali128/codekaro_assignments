@@ -1,0 +1,147 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* container 1 css */
+.container1{
+    margin: 20px auto;
+    width: 600px;
+   }
+.image img{
+    border-radius: 30px;
+    width: 100%;
+    height: 300px;
+    }
+.image{
+    position: relative;
+   
+}
+.container1 h2{
+    position: absolute;
+    top: 20px;
+    margin-top: 100px ;
+    margin-left: 130px;
+    color: whitesmoke;
+}
+.container1 p{
+    color: whitesmoke;
+    position: absolute;
+    top: 40px;
+    margin-top: 130px;
+    margin-left: 30px;
+    width: 600px;
+}
+.container1 button{
+    color: black;
+    border-radius: 18px;
+    background-color: whitesmoke;
+    width: max-content;
+    padding: 10px;
+    font-weight: bolder;
+    border-color: transparent;
+    position: absolute;
+    top: 80px;
+     margin-top: 170px;
+     margin-left: 250px;
+}
+
+
+/* container 2 css */
+
+.container2 {
+   
+    margin: 15px auto;
+    width: 600px;
+    color: red;
+    font-family: sans-serif;
+}
+.container2 h3{
+   font-style: oblique;
+    font-size: 30px;
+    position: absolute;
+    top:400px;
+    margin-left: 230px;
+    color: whitesmoke;
+
+}
+.container2 h5{
+    font-size: 18px;
+    position: absolute;
+    top: 440px;
+    margin-left: 150px;
+     color: whitesmoke;
+}
+.image1 img{
+    width: 100%;
+}
+.image1{
+    position: relative;
+}
+
+.container2 form{
+    border: none;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 500px;
+     margin-left: 120px;
+     width: 400px;
+}
+form select{
+    border: none;
+    border-right: 1px solid black;
+    
+}
+
+form input{
+    border: none;
+}
+
+/* contaioner3 css */
+
+.container3 {
+    border: 3px solid lightgray;
+    margin: 20px auto;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+    position: relative;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image2 img{
+    width: 100%;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+    position: relative;
+}
+
+.image3 img{
+    width:30%;
+    border: 5px solid whitesmoke;
+    border-radius:50%;
+    position: absolute;
+    left: 160px;
+    bottom: -2px;
+    top:50px;
+}
+
+.container3 h2{
+position: absolute;
+    top:230px;
+    left:160px;
+}
+
+.container3 h5 {
+position: absolute;
+    top: 280px;
+    left: 120px;
+    font-size: 20px;
+    color:lightslategray;
+}
