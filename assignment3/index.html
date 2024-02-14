@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbnb.co.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div clas="sticky">
+    <!-- nav bar -->
+    <div class="nav">
+        <img src="data:image/jpeg;base64,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" height="100px">
+       <div class="child1">
+        <p>Stays</p>
+        <p>Experiences</p>
+        <p>Online Experiences</p>
+        </div>
+        <div class="child2">
+            <p>airbnb your home</p>
+            <img src="https://pixabay.com/vectors/globe-earth-symbols-black-and-white-36242/" height="30px" width="30px">
+            <p id="btn"><img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/svg/Holiday%20Homes%20%26%20Apartment%20Rentals%20-%20Airbnb%20-%20Airbnb-5.svg" height="30px" width="30px">
+            <img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/Holiday%20Homes%20%26%20Apartment%20Rentals%20-%20Airbnb%20-%20Airbnb-6.svg" height="30px" width="30px"></p>
+        </div>
+</div>
+    <!-- search bar -->
+    <div class="search">
+        <input type="text" placeholder="where Search destination">
+        <input type="text" placeholder="Check in dates">
+        <input type="text" placeholder="Check add dates">
+        <input type="text" placeholder="who add guests">
+        <img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/Holiday%20Homes%20%26%20Apartment%20Rentals%20-%20Airbnb%20-%20Airbnb-3.svg" height="30px" width="40px">
+    </div>
+    <!-- scroll bar -->
+    <div class="scroll">
+        
+        <div>
+        <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/d1.webp" height="30px" width="30px">
+        <h6>Beach</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i10.jpeg?raw=true" height="30px" width="30px">
+            <h6>islands</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i5.jpeg?raw=true" height="30px" width="30px">
+            <h6>Arctic</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i6.jpeg?raw=true" height="30px" width="30px">
+            <h6>Farms</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i8.jpeg?raw=true" height="30px" width="30px">
+            <h6>New</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i7.jpeg?raw=true" height="30px" width="30px">
+            <h6>Trending</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i2.jpeg?raw=true" height="30px" width="30px">
+            <h6>Camper vans</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i9.jpeg?raw=true" height="30px" width="30px">
+            <h6>Amazing pools</h6>
+        </div>
+        <div>
+            <img src="https://github.com/akshkgd/how-to-css/blob/main/Airbnb%20resources/i11.jpeg?raw=true" height="30px" width="30px">
+            <h6>OMG!</h6>
+        </div>
+        
+        <div><button><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/Holiday%20Homes%20%26%20Apartment%20Rentals%20-%20Airbnb%20-%20Airbnb-8.svg" height="30px" width="30px"></button></div>
+        <div id="filter">
+            <img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/Holiday%20Homes%20%26%20Apartment%20Rentals%20-%20Airbnb%20-%20Airbnb-9.svg" height="30px" width="30px">
+            <h6>Filters</h6>
+        </div>
+        <div id="toggle">
+           
+            <h6>Display totla before taxes</h6>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-toggle-off"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5" />
+            </svg></p>
+        </div>
+
+    </div>
+    </div>
+    <!-- cards -->
+    <div class="container1">
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d1.webp" alt="" class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg" alt="heart" class="heart" height="30px" width="30px"></h6>
+           <div class="data">
+           <div class="captions">
+            <h6 style="color: black;">place</h6>
+            <h6 style="color:darkgray;">distance</h6>
+            <h6 style="color:darkgray;">time period</h6>
+            <h6 style="color: black;">price</h6>
+            </div>
+           <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg" height="20px" width="20px">rating</h6>
+        </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d2.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d3.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d4.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        </div>
+        
+        
+       
+        
+    <div class="container2">
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d1.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d2.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d3.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        <div class="card">
+            <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d4.webp" alt=""
+                    class="pic" height="300px" width="900px"></div>
+            <h6 class="relation"><img
+                    src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                    alt="heart" class="heart" height="30px" width="30px"></h6>
+            <div class="data">
+                <div class="captions">
+                    <h6 style="color: black;">place</h6>
+                    <h6 style="color:darkgray;">distance</h6>
+                    <h6 style="color:darkgray;">time period</h6>
+                    <h6 style="color: black;">price</h6>
+                </div>
+                <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                        height="20px" width="20px">rating</h6>
+            </div>
+        </div>
+        </div>
+          
+        <div class="container3">
+            <div class="card">
+                <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d1.webp" alt=""
+                        class="pic" height="300px" width="900px"></div>
+                <h6 class="relation"><img
+                        src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                        alt="heart" class="heart" height="30px" width="30px"></h6>
+                <div class="data">
+                    <div class="captions">
+                        <h6 style="color: black;">place</h6>
+                        <h6 style="color:darkgray;">distance</h6>
+                        <h6 style="color:darkgray;">time period</h6>
+                        <h6 style="color: black;">price</h6>
+                    </div>
+                    <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                            height="20px" width="20px">rating</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d2.webp" alt=""
+                        class="pic" height="300px" width="900px"></div>
+                <h6 class="relation"><img
+                        src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                        alt="heart" class="heart" height="30px" width="30px"></h6>
+                <div class="data">
+                    <div class="captions">
+                        <h6 style="color: black;">place</h6>
+                        <h6 style="color:darkgray;">distance</h6>
+                        <h6 style="color:darkgray;">time period</h6>
+                        <h6 style="color: black;">price</h6>
+                    </div>
+                    <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                            height="20px" width="20px">rating</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d3.webp" alt=""
+                        class="pic" height="300px" width="900px"></div>
+                <h6 class="relation"><img
+                        src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                        alt="heart" class="heart" height="30px" width="30px"></h6>
+                <div class="data">
+                    <div class="captions">
+                        <h6 style="color: black;">place</h6>
+                        <h6 style="color:darkgray;">distance</h6>
+                        <h6 style="color:darkgray;">time period</h6>
+                        <h6 style="color: black;">price</h6>
+                    </div>
+                    <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                            height="20px" width="20px">rating</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/main/Airbnb%20resources/d4.webp" alt=""
+                        class="pic" height="300px" width="900px"></div>
+                <h6 class="relation"><img
+                        src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/heart.svg"
+                        alt="heart" class="heart" height="30px" width="30px"></h6>
+                <div class="data">
+                    <div class="captions">
+                        <h6 style="color: black;">place</h6>
+                        <h6 style="color:darkgray;">distance</h6>
+                        <h6 style="color:darkgray;">time period</h6>
+                        <h6 style="color: black;">price</h6>
+                    </div>
+                    <h6><img src="https://raw.githubusercontent.com/akshkgd/how-to-css/0debb22f3578dbfaa4806b2f4d95d91e6f8e9520/Airbnb%20resources/svg/start.svg"
+                            height="20px" width="20px">rating</h6>
+                </div>
+            </div>
+        </div>
+    <div class="middle">
+        <h3>Continue exploring beach homes</h3>
+        <button type="button">Show more</button>
+    </div>
+    <div class="main-footer">
+    <div class="above-footer">
+    <h3>Inspiration for future getaways</h3>
+    <div class="beside">
+        <h6>Popular</h6>
+        <h6>Arts&Culture</h6>
+        <h6>Outdoors</h6>
+        <h6>Mountains</h6>
+        <h6>Beache</h6>
+        <h6>Categories</h6>
+    </div>
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Support</th>
+                    <th>Hosting</th>
+                    <th>Airbnb</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>text</td>
+                    <td>text</td>
+                    
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>text</td>
+                    <td>text</td>
+                </tr>
+                <tr>
+                    <td>text</td>
+                    <td>text</td>
+                <td>text</td>
+                </tr>
+               
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="section1">
+            <h6>© 2024 Airbnb, Inc.</h6>
+            <h6>Privacy</h6>
+            <h6>Terms</h6>
+            <h6>Sitemap</h6>
+            <h6>Company details</h6>
+        </div>
+        <div class="section2">
+            <h6>English(IN)</h6>
+            <h6>&#8377; INR</h6>
+            <h6><i class="bi bi-facebook"></i></h6>
+            <h6><i class="bi bi-twitter"></i></h6>
+            <h6><i class="bi bi-instagram"></i></h6>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
